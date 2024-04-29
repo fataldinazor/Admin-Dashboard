@@ -2,7 +2,7 @@ body{
     padding:0;
     margin: 0;
 
-    background-color:#eff6ff;
+    background-color:#cffafe;
     height:100vh;
     width:100vw;
 
@@ -170,7 +170,6 @@ button:hover{
 .sidebar .logo{
     display: grid;
     grid-template:1fr/ 1fr 3fr;
-    /* gap:15px; */
     align-self: center;
 }
 
@@ -211,24 +210,72 @@ button:hover{
 /* mainContent */
 
 .mainContent{
+    padding:10px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    box-sizing: border-box;
-    padding: 20px;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    gap:10px;
+}
+
+.mainContent h4,h5{
+    padding:0;
+    margin:0;
+}
+.mainContent h4{
+    margin-bottom: 10px;
 }
 
 .yourProjects{
-    grid-column: 1/2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-row:1/3;
+    height: auto;
 }
 
-.projectCard>svg{
+
+.projectCards svg{
     height:20px;
     width:20px;
 }
+.projectCards p{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.projectCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap:20px;
+}
 
+.card{
+    display:grid;
+    grid-template-columns: 5px 1fr;
+    background-color: #bae6fd;
+    border-radius: 5px 10px 10px 5px;
+}
+
+.yellowLine{
+    background-color: #164e63;
+    grid-row: 1/-1;
+    border-radius: 10px 0 0 10px ;
+}
+
+.cardContent{
+    box-sizing: border-box;
+    padding:20px;
+    display:grid;
+    grid-template-rows:  1fr 2fr 1fr ;
+}
+
+.svgIcons{
+    margin-top: px;
+    justify-self: end;
+    align-self:end;
+}
+.svgIcons>svg{
+    box-sizing: border-box;
+    margin:0 10px;
+}
 
 
 
