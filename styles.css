@@ -11,7 +11,7 @@ body{
 
 .container{
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     height:100vh;
 }
@@ -40,7 +40,7 @@ body{
 
     display: grid;
     grid-template-columns: 1fr 10fr repeat(2, 1fr) 2fr;
-    gap:1vw;
+    gap:1rem;
 }
 
 .upperHeader>svg{
@@ -181,24 +181,19 @@ button:hover{
     fill:white;
     height: 20px;
     width:20px;
-
     justify-self: center;
 }
 
-.mainContent{
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
 
 .sidebarOptions{
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
-    gap:5vh;
+    gap:2rem;
 }
 
 .sidebarOptions .upper{
     grid-row:1/2 ;
-
+    
     display:grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -211,12 +206,17 @@ button:hover{
 
 
 /* mainContent */
+.mainContent{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
 
 .mainContent{
     padding:10px;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     gap:1rem;
+    overflow: auto;
 }
 
 .yourProjects{
